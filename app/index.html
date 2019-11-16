@@ -7,6 +7,8 @@
 	<meta name="viewport" content="width=device-width">
 	<link rel="icon" href="img/favicon.png">
 	<meta property="og:image" content="img/@1x/preview.jpg">
+	<link href="libs/slick/slick.css" rel="stylesheet">
+	<link href="libs/slick/slick-theme.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/styles.min.css">
 </head>
 <body>
@@ -14,9 +16,11 @@
 <header id="header">
 	<div class="container flex-container">
 		<!-- Logo -->
-		<div class="logo-container">
+		<div class="logo-container flex-container">
 			<div class="logo-img">
-				<img src="/img/_src/header/logo.png" alt="logo">
+				<a href="#">
+					<img src="img/_src/header/logo.png" alt="logo">
+				</a>
 			</div>
 			<div class="logo-text-container">
 				<span class="logo-text">Humanism</span>
@@ -26,7 +30,7 @@
 		</div>
 		<!-- /Logo -->
 		<!-- Nav-menu -->
-		<ul class="header-nav">
+		<ul class="header-nav flex-container">
 			<li class="header-nav-item">
 				<a href="#">О компании</a>
 				<ul class="header-submenu">
@@ -90,34 +94,43 @@
 		</ul>
 		<!-- /Nav Menu -->
 		<!-- Header Buttons -->
-		<div class="header-buttons">
+		<div class="header-buttons flex-container">
 			<a href="#" class="header-btn header-cart"></a><a href="#" class="header-btn header-lock"></a>
 		</div>
 		<!-- /Header Buttons -->
 		<!-- Multi Lang -->
 		<ul class="multi-lang">
-            <li class="multi-lang-item active">Рус</li>
-			<li class="multi-lang-item">Eng</li>
+			<li class="multi-lang-item active"><a href="#">Рус</a></li>
+			<li class="multi-lang-item"><a href="#">Eng</a></li>
 		</ul>
 		<!-- Multi Lang -->
 	</div>
-	<div class="container">
+	<div class="container header-bottom flex-container">
 		<!-- Video Slider -->
-		<ul class="video-slider">
-			<li class="video-slider-item">
-				<iframe width="100%" height="315" src="https://www.youtube.com/embed/ivCY3Ec4iaU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</li>
-			<li class="video-slider-item">
-				<iframe width="100%" height="315" src="https://www.youtube.com/embed/ivCY3Ec4iaU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</li>
-			<li class="video-slider-item">
-				<iframe width="100%" height="315" src="https://www.youtube.com/embed/ivCY3Ec4iaU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</li>
-		</ul>
+		<div class="video-slider">
+			<div class="video-slider-item">
+				<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ivCY3Ec4iaU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+			</div>
+			<div class="video-slider-item">
+				<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ivCY3Ec4iaU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+			</div>
+			<div class="video-slider-item">
+				<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ivCY3Ec4iaU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+			</div>
+			<div class="video-slider-item">
+				<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ivCY3Ec4iaU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+			</div>
+			<div class="video-slider-item">
+				<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ivCY3Ec4iaU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+			</div>
+			<div class="video-slider-item">
+				<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ivCY3Ec4iaU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+			</div>
+		</div>
 		<!-- /Video  Slider -->
 		<!-- Header Banner -->
 		<div class="header-banner banner">
-			<h3 class="header-banner-title banner-title">Товары для здоровья</h3>
+			<h3 class="header-banner-title banner-title">Товары для <br>здоровья</h3>
 			<a href="#" class="btn-more">Подробнее</a>
 		</div>
 		<!-- /Header Banner -->
@@ -261,8 +274,8 @@
 		  </div>
 		  <!-- /Advantages Banner -->
 		  <div class="advantages-titles-container">
-			  <h3 class="advantages-titles"><span class="color-one">Health</span><span class="color-two">Care</span></h3>
-			  <h4 class="advantages-subtitles">Revolution</h4>
+			  <h1 class="advantages-titles"><span class="color-one">Health</span><span class="color-two">Care</span></h1>
+			  <h2 class="advantages-subtitles">Revolution</h2>
 		  </div>
 	  </div>
   </section>

@@ -18,7 +18,6 @@ button
   @include reset-button
 a,button,input
   cursor: pointer
-  transition: 2s ease
 a
   text-decoration: none
   color: #fff
@@ -30,36 +29,18 @@ body
   position: relative
   overflow-x: hidden
   color: #000
-  background-color: $white
-  font-family: 'Montserrat', sans-serif
-  @include font(400,16px,1.65)
-// Headers text configs
-h1,h3
-  text-transform: uppercase
-h1
-  font-family: 'Yeseva One', cursive
-  @include font(400,48px,55px)
-  color: #fff
-  letter-spacing: 4.7px
-h2
-  @include font(800,36px,40px)
-  margin-bottom: 20px
-h3
-  @include font(800,16px,40px)
-  letter-spacing: 2px
-h4
-  @include font(700,14px,31px)
-h5
-  @include font(700,16px,21px)
-
-img
+  background-color: #eaeaea
+  font-family: 'SeroPro', sans-serif
+  font-style: normal
+  @include font(400,16px,1.20)
+img,iframe
   max-width: 100%
   height: auto
 #header,#main,#footer
   overflow: hidden
 // containers
 .container
-  max-width: 1141px
+  max-width: 1170px
   width: 100%
   margin: 0 auto
 .grid-container
@@ -68,5 +49,168 @@ img
 .flex-container
   display: flex
   justify-content: space-between
+/*Header*/
+#header
+  background: url('../img/_src/body/slider-home/Slider-bg.jpg') no-repeat
+  background-size: contain
+  padding: 30px 0 60px 0
+.logo-text-container
+  margin-left: 30px
+.logo-text
+  display: block
+  color: $white
+  font-weight: 500
+  text-transform: uppercase
+  font-size: 15px
+  line-height: 16px
+/* Header Nav */
+.header-nav
+  @include list-type-none
+  .header-nav-item
+    position: relative
+    text-align: center
+    height: 45px
+  .header-nav-item.active-sub
+    position: relative
+  .header-nav-item.active-sub>a::after
+    content: '▼'
+    color: $white
+    font-size: 10px
+    margin-left: 20px
+  .header-nav-item.active-sub>a:hover::after
+    content: '▼'
+    color: $brown
+    font-size: 10px
+    margin-left: 20px
+  .header-nav-item.active-sub:hover
+    background-color: #412f2bf2
+    border-radius: 25px
+  .header-nav-item.active-sub:hover .header-submenu
+    display: block
+  .header-nav-item a
+    padding: 0 25px
+    font-weight: bold
+    display: block
+    text-align: center
+    font-size: 15px
+    line-height: 45px
+  .header-nav-item a:hover
+    color: $brown
+.header-submenu
+  display: none
+  position: absolute
+  @include list-type-none
+  width: 214px
+  .header-submenu-item
+    position: relative
+    .header-submenu
+      right: -214px
+      padding-top: 0
+      top: 0
+  .header-submenu-item:nth-of-type(even)
+    border-bottom: 1px solid #000
+    border-top: 1px solid #000
+  .header-submenu-item a
+    font-weight: normal
+    text-align: left
+    line-height: normal
+    padding: 20px
+    background-color: #d28c3fed
+    position: relative
+  .header-submenu-item a::after
+    content: ''
+  .header-submenu-item a:hover
+    background-color: #000000
+    color: $white
+  .header-submenu-item.active-sub a::after,.header-submenu-item.active-sub a:hover::after
+    content: '>'
+    position: absolute
+    top: 40%
+    right: 20px
+    font-weight: bold
+    font-size: 11px
+    color: $white
+  .header-submenu
+    display: none
+/* Header Buttons*/
+.header-buttons
+  margin-left: 10px
+.header-btn
+  display: block
+  height: 50px
+  width: 50px
+  border-radius: 50%
+  margin-top: -3px
+.header-btn:first-of-type
+  margin-right: 30px
+.header-btn.header-cart
+  background: url('../img/icons/cart.png') no-repeat 10px $white
+.header-btn.header-lock
+  background: url('../img/icons/lock.png') no-repeat center $white
+/* Multilang */
+.multi-lang
+  @include list-type-none
+  margin-top: 11px
+  margin-left: 15px
+.multi-lang-item
+  display: none
+  a
+    display: block
+.multi-lang-item.active
+  display: block
+  position: relative
+.multi-lang-item.active a::after
+  content: '▼'
+  color: $white
+  font-size: 10px
+  margin-left: 10px
+/* Header Buttom */
+.header-bottom
+  margin-top: 160px
+.banner
+  width: 290px
+  height: 460px
+  background: url('../img/_src/body/slider-home/frame-slider.png') no-repeat
+  background-size: cover
+  padding-left: 15px
+.banner-title
+  font-family: 'Designosaur'
+  font-style: normal
+  font-size: 20px
+  color: $white
+.header-banner-title
+  margin-top: 160px
+.btn-more
+  display: block
+  width: 180px
+  height: 55px
+  line-height: 55px
+  text-align: center
+  color: #000
+  font-weight: bold
+  background-color: $white
+  border-radius: 25px
+  margin-top: 60px
+.btn-more:hover
+  color: $brown
+/* Video Slider */
+.video-slider
+  margin-top: 340px
+  width: 780px
+  .video-slider-item
+    margin-right: 15px
+    iframe,img
+      border-radius: 15px
+  .video-slider-left,.video-slider-right
+    position: absolute
+    display: block
+    top: 35%
+    font-size: 30px
+    background-color: transparent
+    color: #000
+  .video-slider-left
+    left: -65px
+  .video-slider-right
+    right: -50px
 
 @import "media" // Always at the end
