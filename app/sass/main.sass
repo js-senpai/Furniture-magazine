@@ -21,6 +21,8 @@ a,button,input
 a
   text-decoration: none
   color: #fff
+a:hover
+  color: $brown
 body
   min-width: 320px
   max-width: 1980px
@@ -32,15 +34,18 @@ body
   background-color: #eaeaea
   font-family: 'SeroPro', sans-serif
   font-style: normal
-  @include font(400,16px,1.20)
+  @include font(400,15px,1.20)
 img,iframe
   max-width: 100%
   height: auto
+h2
+  font-weight: bold
+  font-size: 35px
 #header,#main,#footer
   overflow: hidden
 // containers
 .container
-  max-width: 1170px
+  max-width: 1190px
   width: 100%
   margin: 0 auto
 .grid-container
@@ -51,25 +56,30 @@ img,iframe
   justify-content: space-between
 /*Header*/
 #header
-  background: url('../img/_src/body/slider-home/Slider-bg.jpg') no-repeat
-  background-size: contain
+  background: url('../img/_src/body/slider-home/slider-cosmetics.png') no-repeat center
+  background-size: cover
   padding: 30px 0 60px 0
+.logo-img
+  margin-right: 17px
 .logo-text-container
-  margin-left: 30px
+  padding-left: 17px
+  border-left: 1px solid #fff
+  max-height: 43px
 .logo-text
   display: block
   color: $white
   font-weight: 500
   text-transform: uppercase
   font-size: 15px
-  line-height: 16px
+  line-height: 15px
 /* Header Nav */
 .header-nav
   @include list-type-none
   .header-nav-item
     position: relative
     text-align: center
-    height: 45px
+    height: 43px
+    margin-right: 5px
   .header-nav-item.active-sub
     position: relative
   .header-nav-item.active-sub>a::after
@@ -93,7 +103,7 @@ img,iframe
     display: block
     text-align: center
     font-size: 15px
-    line-height: 45px
+    line-height: 43px
   .header-nav-item a:hover
     color: $brown
 .header-submenu
@@ -101,6 +111,7 @@ img,iframe
   position: absolute
   @include list-type-none
   width: 214px
+  padding-top: 10px
   .header-submenu-item
     position: relative
     .header-submenu
@@ -133,16 +144,14 @@ img,iframe
   .header-submenu
     display: none
 /* Header Buttons*/
-.header-buttons
-  margin-left: 10px
 .header-btn
   display: block
-  height: 50px
-  width: 50px
+  height: 45px
+  width: 45px
   border-radius: 50%
   margin-top: -3px
 .header-btn:first-of-type
-  margin-right: 30px
+  margin-right: 46px
 .header-btn.header-cart
   background: url('../img/icons/cart.png') no-repeat 10px $white
 .header-btn.header-lock
@@ -151,7 +160,8 @@ img,iframe
 .multi-lang
   @include list-type-none
   margin-top: 11px
-  margin-left: 15px
+  margin-left: 25px
+  margin-right: 22px
 .multi-lang-item
   display: none
   a
@@ -168,21 +178,22 @@ img,iframe
 .header-bottom
   margin-top: 160px
 .banner
-  width: 290px
+  width: 280px
   height: 460px
   background: url('../img/_src/body/slider-home/frame-slider.png') no-repeat
   background-size: cover
   padding-left: 15px
+  margin-right: 18px
 .banner-title
   font-family: 'Designosaur'
   font-style: normal
-  font-size: 20px
+  font-size: 18px
   color: $white
 .header-banner-title
-  margin-top: 160px
+  margin-top: 150px
 .btn-more
   display: block
-  width: 180px
+  width: 165px
   height: 55px
   line-height: 55px
   text-align: center
@@ -190,27 +201,146 @@ img,iframe
   font-weight: bold
   background-color: $white
   border-radius: 25px
-  margin-top: 60px
+  margin-top: 65px
+  font-size: 15px
 .btn-more:hover
   color: $brown
 /* Video Slider */
 .video-slider
   margin-top: 340px
-  width: 780px
+  max-width: 756px
+  .slick-list
+    margin-left: 70px
   .video-slider-item
-    margin-right: 15px
+    margin-right: 20px
     iframe,img
       border-radius: 15px
+      height: 117px
   .video-slider-left,.video-slider-right
     position: absolute
     display: block
-    top: 35%
+    top: 38%
     font-size: 30px
     background-color: transparent
     color: #000
   .video-slider-left
-    left: -65px
+    left: 4px
   .video-slider-right
-    right: -50px
-
+    right: -20px
+//Catalog
+.catalog-home-nav
+  justify-content: flex-start
+  @include list-type-none
+  margin-top: 5px
+.catalog-home-nav-item
+  height: 350px
+  width: calc(100%/3)
+  display: flex
+  align-items: center
+  background: url("../img/_src/body/catalog-home/catalog-item-bg.jpg") no-repeat
+  a
+    display: block
+    width: 100%
+  img
+    display: block
+    margin: 80px auto 42px auto
+.catalog-home-nav-item.active
+  background: url("../img/_src/body/catalog-home/catalog-border.png") no-repeat $white
+  background-size: 88% 90%
+  background-position: 30px 10px
+.catalog-nav-title
+  font-size: 20px
+  text-align: center
+  max-width: 225px
+  margin: 0 auto
+/* Catalog Banner */
+.catalog-banner,.catalog-hit
+  background: url('../img/_src/body/catalog-home/catalog-bg.jpg')
+  padding: 0 15px
+.catalog-title
+  padding-top: 50px
+  margin-bottom: 38px
+.catalog-banner-container
+  background: url('../img/_src/body/catalog-home/catalog-banner.jpg') no-repeat
+  background-size: cover
+  height: 175px
+.catalog-banner-more
+  font-weight: bold
+  color: $white
+  display: block
+  background-color: #ee3364
+  width: 140px
+  height: 45px
+  border-radius: 5px
+  text-align: center
+  line-height: 50px
+  margin-left: 132px
+  margin-top: 40px
+.catalog-banner-item:first-of-type
+  .catalog-banner-subtitle
+    font-size: 25px
+    font-weight: bold
+    color: $white
+    margin-left: 175px
+    margin-top: 10px
+    text-transform: uppercase
+.catalog-banner-item:last-of-type
+  width: 320px
+  height: 120px
+  background-color: #c59a5bcc
+  border-radius: 10px
+  margin-top: 25px
+  margin-right: 98px
+  .catalog-banner-subtitle
+    margin: 20px 0 8px 40px
+    color: $white
+    font-size: 24px
+  .catalog-banner-text
+    margin-left: 40px
+/* Catalog Hit */
+.catalog-hit
+  padding-bottom: 75px
+  .catalog-title
+    margin-left: 20px
+.catalog-list-hit
+  @include list-type-none
+.hit-list-item
+  width: 180px
+  height: 180px
+  background: url('../img/_src/body/catalog-home/catalog-hit-border.png') no-repeat
+  background-size: cover
+  position: relative
+  img
+    display: block
+    margin: 0 auto
+    margin-top: 18px
+.hit-list-item:hover .hit-list-item-buy
+  display: block
+.hit-list-item-buy
+  display: none
+  width: 100px
+  height: 100px
+  background-color: #b8723ed9
+  border-radius: 50%
+  position: absolute
+  top: 40px
+  left: 40px
+  overflow: hidden
+  .hit-buy-cart,.hit-buy-more
+    display: block
+    height: 50%
+  .hit-buy-cart
+    background: url('../img/icons/cart.png') no-repeat center $white
+    background-size: 20px
+  .hit-buy-more
+    text-transform: lowercase
+    text-align: center
+    line-height: 45px
+.hit-list-text
+  @include list-type-none
+  margin-top: 25px
+.hit-list-text-item
+  width: 180px
+.hit-title
+  text-align: center
 @import "media" // Always at the end
