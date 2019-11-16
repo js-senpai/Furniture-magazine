@@ -366,6 +366,7 @@ h2
   background-size: 100%
   margin-top: -70px
   padding-top: 1px
+  height: 1425px
 .advantages-list
   width: 590px
   flex-wrap: wrap
@@ -439,4 +440,28 @@ h2
     letter-spacing: 21px
     font-weight: 400
     margin-top: -35px
+/* About */
+.about
+  background: url('../img/_src/body/about-home/about-bg.png') no-repeat
+  background-size: cover
+  height: 847px
+  position: relative
+  top: -243px
+  display: flex
+  flex-direction: column
+  justify-content: flex-end
+  padding-bottom: 100px
+.about-list,.about-list ul
+  @include list-type-none
+.about-list
+  padding: 0 15px
+.about-list-item:nth-of-type(2)
+  margin: 0 30px
+.about-list-title
+  font-size: 25px
+  height: 59px
+.about-list-subtitle
+  margin-top: 14px
+.about-list-submenu
+  margin-top: 18px
 @import "media" // Always at the end
