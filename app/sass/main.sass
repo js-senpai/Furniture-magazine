@@ -247,7 +247,7 @@ h2
 .catalog-home-nav-item.active
   background: url("../img/_src/body/catalog-home/catalog-border.png") no-repeat $white
   background-size: 88% 90%
-  background-position: 30px 10px
+  background-position: center
 .catalog-nav-title
   font-size: 20px
   text-align: center
@@ -343,4 +343,100 @@ h2
   width: 180px
 .hit-title
   text-align: center
+/* Advantages */
+.advantages
+  background: url('../img/_src/body/advantages-home/advantages-top-bg.png') no-repeat
+  background-size: 100%
+  background-position: -4px 16px
+  padding-top: 1px
+  position: relative
+.advantages-top
+  max-width: 1225px
+  margin: 0 auto
+.advantages-title
+  margin: 83px 0 0 50%
+  color: #000
+.advantages-subtext
+  max-width: 300px
+  margin-left: 51%
+  font-weight: bold
+  margin-top: 25px
+.advantages-bottom
+  background: url('../img/_src/body/advantages-home/advantages-bottom-bg.png') no-repeat top center
+  background-size: 100%
+  margin-top: -70px
+  padding-top: 1px
+.advantages-list
+  width: 590px
+  flex-wrap: wrap
+  @include list-type-none
+  margin-top: 368px
+  margin-left: 18%
+  justify-content: flex-start
+.advantages-list-item
+  margin-bottom: 43px
+  margin-right: 25px
+  width: 165px
+  .advantages-text
+    display: block
+    text-align: center
+    color: $white
+    font-weight: bold
+    margin-top: 10px
+  .advantages-list-img
+    height: 165px
+    background: url('../img/_src/body/advantages-home/advantages-item-border.png') no-repeat
+    background-size: 100%
+    display: flex
+    align-items: center
+  img
+    display: block
+    margin: 0 auto
+.advantages-list-item:nth-of-type(3)
+  display: block
+  background: none
+  .advantages-info
+    color: #fff
+    font-weight: bold
+    padding-top: 45px
+    font-size: 25px
+    display: block
+.advantages-banner
+  max-width: 750px
+  margin-left: 113px
+  height: 230px
+  background: url('../img/_src/body/advantages-home/advantages-border.png') no-repeat #000000b8
+  background-size: 95%
+  background-position: center
+  .advantages-text
+    color: $white
+    font-weight: bold
+    font-size: 20px
+    width: 65%
+    padding: 75px 140px
+.advantages-titles-container
+  position: absolute
+  top: 409px
+  right: -48px
+  transform: rotate(-90deg)
+  .advantages-titles
+    font-family: 'Designosaur'
+    font-size: 140px
+    font-weight: normal
+    text-transform: uppercase
+    padding-bottom: 0
+    margin-bottom: 0
+    .color-one
+      color: #f9bf7f
+    .color-two
+      color: #954f3b
+      font-weight: normal
+  .advantages-subtitles
+    font-family: Designosaur
+    font-style: italic
+    text-align: right
+    font-size: 77px
+    letter-spacing: 21px
+    font-weight: 400
+    margin-top: -35px
 @import "media" // Always at the end
