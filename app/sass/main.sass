@@ -466,7 +466,8 @@ h2
   margin-top: 18px
 /* Filials */
 .filials
-  margin-top: -153px
+  position: relative
+  top: -153px
   .flex-container
     padding: 0 14px
 .filials-countries-link
@@ -481,15 +482,18 @@ h2
   width: 37px
   height: 40px
   margin-right: 12px
-  background-size: cover
 .filials-countries-item.korea
   background: url('../img/_src/body/filials-home/filial-icon-2.png') no-repeat
+  background-size: cover
 .filials-countries-item.china
   background: url('../img/_src/body/filials-home/filial-icon-3.png') no-repeat
+  background-size: cover
 .filials-countries-item.russia
   background: url('../img/_src/body/filials-home/filial-icon-4.png') no-repeat
+  background-size: cover
 .filials-countries-item.america
   background: url('../img/_src/body/filials-home/filial-icon-5.png') no-repeat
+  background-size: cover
 .filials-countries-map
   margin-top: -15px
 /* Filials Map */
@@ -516,4 +520,47 @@ h2
   font-weight: bold
 .filial-banner-text-call
   margin-top: 40px
+/* Footer */
+#footer
+  background: url('../img/_src/footer/footer-bg.png') no-repeat top center
+  height: 480px
+  background-size: 100%
+  margin-top: -337px
+  .container
+    margin-top: 300px
+    color: $white
+.footer-item:first-of-type
+  margin-left: 111px
+  a
+    display: block
+    margin-top: 23px
+    font-size: 25px
+.social-title
+  font-size: 15px
+.footer-item:last-of-type
+  margin-right: 44px
+.social
+  @include list-type-none
+.social-item
+  height: 60px
+  width: 60px
+  margin-top: 4px
+  a
+    display: block
+    height: 100%
+    width: 100%
+.social-item.instagram
+  background: url('../img/_src/footer/inst-icon.png') no-repeat center
+  background-size: cover
+.social-item.facebook
+  background: url('../img/_src/footer/fb-icon.png') no-repeat center
+  background-size: cover
+.social-item.odnoclassniki
+  background: url('../img/_src/footer/od-icon.png') no-repeat center
+  background-size: cover
+.social-item.vk
+  background: url('../img/_src/footer/vk-icon.png') no-repeat center
+  background-size: cover
+.copyright
+  margin-top: 30px
 @import "media" // Always at the end
