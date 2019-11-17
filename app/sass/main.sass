@@ -307,8 +307,19 @@ h2
 /* Catalog Hit */
 .catalog-hit
   padding-bottom: 75px
+  position: relative
   .catalog-title
     margin-left: 20px
+.catalog-hit::after
+  content: ''
+  display: block
+  width: 25px
+  height: 20px
+  background: url("../img/_src/body/catalog-home/figure-bg.png") no-repeat
+  background-size: 100%
+  position: absolute
+  right: 20px
+  top: 60px
 .catalog-list-hit
   @include list-type-none
 .hit-list-item
@@ -348,6 +359,8 @@ h2
   margin-top: 25px
 .hit-list-text-item
   width: 180px
+  position: absolute
+  bottom: -52px
 .hit-title
   text-align: center
 /* Advantages */
@@ -570,4 +583,91 @@ h2
   background-size: cover
 .copyright
   margin-top: 30px
+
+/*Product Catalog */
+#header.product-catalog-header
+  background-image: url("../img/_src/header/header-bg-tovar.png")
+  padding-bottom: 27px
+#footer.product-catalog-footer
+  margin-top: -127px
+.product-catalog-header
+  .logo-text-container
+    border-color: #000
+  .logo-text
+    color: #000
+.breadcrumbs
+  justify-content: flex-start
+  margin-top: 60px
+  @include list-type-none
+  padding-left: 29px
+  a
+    color: #a87060
+.breadcrumbs-item::after
+  content: '/'
+  color: #a87060
+  margin: 0 8px
+.breadcrumbs-item.active::after
+  content: ''
+.breadcrumbs-item.active
+  a
+    color: #bdbdbd
+.page-title
+  margin-top: 17px
+  padding-left: 30px
+  font-size: 35px
+/* Catalog */
+.product-catalog
+  flex-wrap: wrap
+  justify-content: flex-start
+  @include list-type-none
+.product-catalog-item
+  position: relative
+  margin: 0px 2px 2px 0
+  width: 33%
+  .product-catalog-title
+    position: absolute
+    bottom: 56px
+    left: 31px
+    font-size: 15px
+    font-weight: normal
+  .article
+    position: absolute
+    left: 31px
+    bottom: 36px
+.product-catalog-item.more
+  background: url('../img/_src/body/catalog-home/catalog-item-bg.jpg') no-repeat center
+  background-size: cover
+  display: flex
+  align-items: center
+  justify-content: center
+  a
+    text-decoration: underline
+    text-align: center
+.product-catalog-img
+  max-height: 384px
+  img
+    width: 100%
+.product-header
+  position: absolute
+  top: 16px
+  width: 100%
+  justify-content: flex-end
+  .header-btn:first-of-type
+    margin-right: 10px
+  .header-btn:last-of-type
+    margin-right: 10px
+.header-btn.header-wish
+  background: url('../img/icons/like.png') no-repeat $white center
+.catalog-product-container .catalog-hit
+  padding: 0
+  min-height: 434px
+  .catalog-list-hit
+    padding: 0 20px
+  .catalog-title
+    font-size: 25px
+    padding-top: 68px
+    margin-left: 32px
+  .hit-list-item
+    img
+      margin-top: 30px
 @import "media" // Always at the end

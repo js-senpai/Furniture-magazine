@@ -36,9 +36,11 @@
     justify-content: center
     flex-wrap: wrap
   .hit-list-item
-    margin-bottom: 20px
+    margin-bottom: 70px
   .hit-list-text
     display: none
+  .product-catalog-item
+    width: 48%
 @media only screen and (max-width : 888px)
   .header-btn:first-of-type
     margin-right: 10px
@@ -62,6 +64,10 @@
     order: 4
   .header-nav
     order: 5
+  #header .breadcrumbs
+    flex-direction: row
+    a
+      color: $white
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
   .header-nav
@@ -180,6 +186,10 @@
     flex-wrap: wrap
   .advantages-banner
     height: auto
+  .product-catalog-item
+    width: 100%
+  #footer.product-catalog-footer
+    margin-top: 0
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
   /**/
