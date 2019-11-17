@@ -68,6 +68,19 @@
     flex-direction: row
     a
       color: $white
+  .main-img-product-container,.product-info
+    width: 100%
+  .main-product-container>.flex-container
+    flex-wrap: wrap
+  .main-img-product
+    max-width: 100%
+    img
+      display: block
+      margin: 0 auto
+  .img-product-gallery
+    justify-content: center
+  .product-name
+    text-align: center
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
   .header-nav
@@ -196,7 +209,14 @@
 
 
 /*==========  Mobile First  ==========*/
-
+@media only screen and (max-width : 370px)
+  .color-list
+    margin-left: -27px
+  .color-list-item
+    width: 73px
+  .color-list-item:nth-of-type(2)::after,.color-list-item:nth-of-type(2)::before
+    content: ''
+    display: none
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px)
   /**/
