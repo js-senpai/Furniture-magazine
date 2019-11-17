@@ -46,7 +46,6 @@ h2
 // containers
 .container
   max-width: 1190px
-  width: 100%
   margin: 0 auto
 .grid-container
   display: grid
@@ -56,9 +55,15 @@ h2
   justify-content: space-between
 /*Header*/
 #header
-  background: url('../img/_src/body/slider-home/slider-cosmetics.png') no-repeat center
+  background: url('../img/_src/body/slider-home/slider-cosmetics.png') no-repeat top center
   background-size: cover
   padding: 30px 0 60px 0
+.header-bg-mebel
+  background: url('../img/_src/body/slider-home/slider-mebel-bg.png') no-repeat top center !important
+  background-size: 100% 100%
+.header-bg-ob
+  background: url('../img/_src/body/slider-home/slider-ob-bg.png') no-repeat top center !important
+  background-size: 100% 100%
 .logo-img
   margin-right: 17px
 .logo-text-container
@@ -73,6 +78,8 @@ h2
   font-size: 15px
   line-height: 15px
 /* Header Nav */
+.toggleNav
+  display: none
 .header-nav
   @include list-type-none
   .header-nav-item
@@ -153,7 +160,7 @@ h2
 .header-btn:first-of-type
   margin-right: 46px
 .header-btn.header-cart
-  background: url('../img/icons/cart.png') no-repeat 10px $white
+  background: url('../img/icons/cart.png') no-repeat center $white
 .header-btn.header-lock
   background: url('../img/icons/lock.png') no-repeat center $white
 /* Multilang */
@@ -417,16 +424,16 @@ h2
     padding: 75px 140px
 .advantages-titles-container
   position: absolute
-  top: 409px
-  right: -48px
+  top: 475px
+  right: -94px
   transform: rotate(-90deg)
   .advantages-titles
     font-family: 'Designosaur'
     font-size: 140px
     font-weight: normal
     text-transform: uppercase
-    padding-bottom: 0
-    margin-bottom: 0
+    padding: 0
+    margin: 0
     .color-one
       color: #f9bf7f
     .color-two
@@ -524,7 +531,7 @@ h2
 #footer
   background: url('../img/_src/footer/footer-bg.png') no-repeat top center
   height: 480px
-  background-size: 100%
+  background-size: 100% 100%
   margin-top: -337px
   .container
     margin-top: 300px

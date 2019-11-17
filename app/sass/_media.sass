@@ -1,8 +1,24 @@
 @import "vars"
 
 /*==========  Desktop First  ==========*/
-@media only screen and (max-width: 1340px)
-  /**/
+@media only screen and (max-width: 1350px)
+  .advantages-titles-container
+    right: -220px
+@media only screen and (max-width: 1105px)
+  .advantages-titles-container
+    display: none
+  .header-nav .header-nav-item>a
+    padding: 0 5px
+  .header-bottom
+    flex-direction: column
+    margin-top: 20px
+  .header-banner
+    order: -1
+    margin: 0 auto
+  .video-slider
+    margin: 20px auto 0 auto
+  .container
+    margin: 0 10px
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
   /**/
@@ -10,15 +26,160 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-  /**/
-
+  .header-btn:first-of-type
+    margin-right: 10px
+  .about
+    background: $white
+    height: auto
+    padding: 20px 0
+  .catalog-list-hit
+    justify-content: center
+    flex-wrap: wrap
+  .hit-list-item
+    margin-bottom: 20px
+  .hit-list-text
+    display: none
+@media only screen and (max-width : 888px)
+  .header-btn:first-of-type
+    margin-right: 10px
+  .about
+    background: $white
+    height: auto
+    padding: 20px 0
+  #header>.flex-container
+      flex-direction: column
+  .header-buttons,.logo-container,.multi-lang
+    justify-content: center
+    margin-bottom: 15px
+    text-align: center
+  .logo-container
+    order: 1
+  .header-buttons
+    order: 2
+  .multi-lang
+    order: 3
+  .toggleNav
+    order: 4
+  .header-nav
+    order: 5
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-  /**/
-
+  .header-nav
+    display: none
+    background-color: #000000b8
+  .toggleNav
+    display: block
+    background: transparent
+    @include reset-button
+    color: $white
+    font-size: 30px
+    transition: all 2s ease-in-out
+  .toggleNav.active
+    transform: rotate(180deg)
+  .header-nav .header-nav-item
+    margin-right: 0
+    height: auto
+  .header-nav .header-nav-item.active-sub:hover
+    background-color: transparent
+    border-radius: 0
+  .header-submenu
+    position: static
+    width: 100%
+  .video-slider
+    margin: 20px auto
+    width: 100%
+  .video-slider .video-slider-item
+    margin-right: 0
+  .video-slider .slick-list
+    margin: 0 auto
+    max-width: 200px
+  .video-slider .video-slider-right,.video-slider .video-slider-left
+    right: 0
+  .catalog-home-nav,.catalog-banner-container,.catalog-list-hit,.about-list,.filials>.flex-container
+    flex-wrap: wrap
+  .catalog-home-nav-item,.catalog-banner-item
+    width: 100%
+  .catalog-banner-container
+    background-position: center
+    height: auto
+  .catalog-banner-item
+    text-align: center
+  .catalog-banner-item:first-of-type .catalog-banner-subtitle,.catalog-banner-more,.catalog-banner-item:last-of-type .catalog-banner-subtitle
+    margin: 20px auto
+  .catalog-banner-item:last-of-type
+    max-width: 320px
+    height: auto
+    width: 100%
+    padding: 0 5px
+    margin: 0 auto
+    margin-bottom: 20px
+  .catalog-banner-item:last-of-type .catalog-banner-text
+    margin-left: 0
+    text-align: center
+    padding-bottom:  20px
+  .advantages-bottom
+    background-size: 100% 100%
+    margin-top: -293px
+  .advantages-list
+    width: 100%
+    margin-left: 0
+    margin-top: 400px
+    justify-content: center
+  .about
+    position: static
+  .advantages-banner
+    margin: 0 auto
+    background: #000000b8
+    display: flex
+    align-items: center
+  .advantages-banner .advantages-text
+    padding: 0
+    margin: 0 auto
+  .about-list-item:nth-of-type(2)
+    margin: 20px auto
+  .filials,.filial-map
+    position: static
+    margin-top: 20px
+  .filials .flex-container
+    padding: 0
+  #footer
+    margin-top: -150px
+  .filial-banner
+    margin: 0
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px)
-  /**/
+@media only screen and (max-width : 580px)
+  .filials-countries-map
+    display: none
+  .advantages-title,.advantages-subtext
+    margin: 10px auto
+    text-align: center
+  .footer-item:first-of-type
+    margin-left: 0
+  .footer-item:last-of-type
+    margin-right: 0
+@media only screen and (max-width : 450px)
+  #footer,.advantages-bottom
+    background: #b36751
+    height: auto
+  .advantages
+    background: #eaeaea
+  .advantages-info
+    text-align: center
+  .advantages-bottom
+    margin: 0 10px
+    padding-bottom: 20px
+  .advantages-list
+    margin-top: 20px
+  #footer .container
+    flex-wrap: wrap
+    justify-content: center
+    margin-top: 20px
+  .footer-item
+    margin-bottom: 20px
+  .filials-countries
+    flex-wrap: wrap
+  .advantages-banner
+    height: auto
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
   /**/

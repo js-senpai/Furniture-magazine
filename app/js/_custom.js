@@ -24,6 +24,20 @@ $(document).ready(function () {
        slidesToScroll: 3,
        swipe: true,
        prevArrow: '<button type="button" class="video-slider-left icofont-simple-left"></button>',
-       nextArrow: '<button type="button" class="video-slider-right icofont-simple-right"></button>'
+       nextArrow: '<button type="button" class="video-slider-right icofont-simple-right"></button>',
+       responsive: [
+           {
+               breakpoint: 768,
+               settings: {
+                   slidesToShow: 1,
+                   slidesToScroll: 1
+               }
+           }
+       ]
     });
+    /* Toggle Menu */
+    $('.toggleNav').click(function () {
+        $(this).toggleClass('active');
+        $('.header-nav').slideToggle('slow');
+    })
 });
