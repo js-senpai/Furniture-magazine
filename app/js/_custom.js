@@ -56,6 +56,7 @@ $(document).ready(function () {
         currentUrl = currentUrl.replace(/.*(\/)/g,'');
         $('#header').attr('class',currentUrl);
         $('#'+currentUrl).removeClass('hidden').siblings('ul').addClass('hidden');
+        $('.header-banner.'+currentUrl).removeClass('hidden').siblings('.header-banner').addClass('hidden');
         console.log(currentUrl)
     })
 });
