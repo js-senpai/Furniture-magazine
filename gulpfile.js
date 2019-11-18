@@ -61,7 +61,7 @@ gulp.task('imagemin', function() {
 		.pipe(imagemin({
 			interlaced: true,
 			progressive: true,
-			optimizationLevel: 5,
+			optimizationLevel: 1,
 			svgoPlugins: [
 				{
 					removeViewBox: true
@@ -72,7 +72,7 @@ gulp.task('imagemin', function() {
 });
 
 // Responsive Images
-var quality = 75; // Responsive images quality
+var quality = 90; // Responsive images quality
 
 // Produce @1x images
 gulp.task('img-responsive-1x', async function() {
