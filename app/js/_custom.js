@@ -1,4 +1,9 @@
 $(document).ready(function () {
+    let lazyLoadInstance = new LazyLoad({
+        elements_selector: ".lazy"
+        // ... more custom settings?
+    });
+    lazyLoadInstance.update();
    /* Header submenu */
    $('.header-submenu').parent().addClass('active-sub');
    /* Header Multilang */
@@ -22,6 +27,7 @@ $(document).ready(function () {
        swipeToSlide: true,
        slidesToShow: 3,
        slidesToScroll: 3,
+       lazyLoad: 'ondemand',
        swipe: true,
        prevArrow: '<button type="button" class="video-slider-left icofont-simple-left"></button>',
        nextArrow: '<button type="button" class="video-slider-right icofont-simple-right"></button>',
