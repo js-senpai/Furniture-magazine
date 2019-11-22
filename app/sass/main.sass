@@ -63,8 +63,8 @@ h2
   padding: 30px 0 60px 0
 #header.hit-cosmetics
   background: url('../img/_src/body/slider-home/slider-cosmetics.png') no-repeat
-  background-position: 0 0
-  background-size: 100%
+  background-position: top center
+  background-size: inherit
 #header.hit-med
   background: url('../img/_src/body/slider-home/slider-mebel-bg.png') no-repeat top center !important
   background-size: 100% 100%
@@ -260,7 +260,7 @@ h2
     color: $white
   img
     display: block
-    margin: 100px auto 42px auto
+    margin: 88px auto 41px auto
 .catalog-home-nav-item.active
   background: url("../img/_src/body/catalog-home/catalog-border.png") no-repeat $white
   background-size: 88% 90%
@@ -276,11 +276,11 @@ h2
   background: url('../img/_src/body/catalog-home/catalog-bg.jpg')
   padding: 0 15px
 .catalog-title
-  padding-top: 50px
+  padding-top: 53px
   margin-bottom: 38px
 .catalog-banner-container
   padding-top: 1px
-  margin-top: 44px
+  margin-top: 39px
   background: url('../img/_src/body/catalog-home/catalog-banner.jpg') no-repeat
   background-size: cover
   height: 175px
@@ -307,7 +307,7 @@ h2
 .catalog-banner-item:last-of-type
   width: 316px
   height: 120px
-  background-color: #c59a5bcc
+  background-color: #cb9e5aeb
   border-radius: 10px
   margin-top: 27px
   margin-right: 80px
@@ -375,7 +375,7 @@ h2
 .hit-list-text-item
   width: 180px
   position: absolute
-  bottom: -57px
+  bottom: -56px
 .hit-title
   text-align: center
 .catalog-hit-link
@@ -392,14 +392,14 @@ h2
 .advantages
   background: url('../img/_src/body/advantages-home/advantages-top-bg.png') no-repeat
   background-size: 100%
-  background-position: -4px 16px
+  background-position: 1px 24px
   padding-top: 1px
   position: relative
 .advantages-top
   max-width: 1225px
   margin: 0 auto
 .advantages-title
-  margin: 83px 0 0 51%
+  margin: 86px 0 0 51%
   color: #000
 .advantages-subtext
   max-width: 319px
@@ -451,6 +451,7 @@ h2
   max-width: 750px
   margin-left: 113px
   height: 225px
+  margin-top: -9px
   background: url('../img/_src/body/advantages-home/advantages-border.png') no-repeat #000000b8
   background-size: 95%
   background-position: center
@@ -459,11 +460,11 @@ h2
     font-weight: bold
     font-size: 20px
     width: 65%
-    padding: 69px 140px
+    padding: 72px 140px
 .advantages-titles-container
   position: absolute
-  top: 475px
-  right: -90px
+  top: 473px
+  right: -91px
   transform: rotate(-90deg)
   .advantages-titles
     font-family: 'Designosaur'
@@ -484,14 +485,14 @@ h2
     font-size: 68px
     letter-spacing: 21px
     font-weight: 400
-    margin-top: -35px
+    margin-top: -29px
 /* About */
 .about
   background: url('../img/_src/body/about-home/about-bg.png') no-repeat
   background-size: cover
-  height: 838px
+  height: 848px
   position: relative
-  top: -243px
+  top: -254px
   display: flex
   flex-direction: column
   justify-content: flex-end
@@ -512,15 +513,17 @@ h2
 /* Filials */
 .filials
   position: relative
-  top: -153px
+  top: -164px
   .flex-container
-    padding: 0 8px
+    padding: 0 3px
 .filials-countries-link
   color: #a87060
   text-decoration: underline
   margin-top: 11px
-  margin-right: 10px
+  margin-right: 11px
   font-weight: bold
+.filials-title
+  padding-left: 11px
 .filials-countries
   @include  list-type-none
   margin: 7px 10px 0
@@ -542,6 +545,7 @@ h2
   background-size: cover
 .filials-countries-map
   margin-top: -15px
+  margin-right: 20px
 /* Filials Map */
 .filial-map
   background: url('../img/_src/body/filials-home/filial map.png') no-repeat
@@ -571,7 +575,7 @@ h2
   background: url('../img/_src/footer/footer-bg.png') no-repeat top center
   height: 480px
   background-size: 100% 100%
-  margin-top: -337px
+  margin-top: -352px
   .container
     margin-top: 300px
     color: $white
@@ -579,7 +583,7 @@ h2
   margin-left: 111px
   a
     display: block
-    margin-top: 23px
+    margin-top: 27px
     font-size: 25px
 .social-title
   font-size: 15px
@@ -705,8 +709,10 @@ h2
 .main-product-container>.flex-container
   padding: 13px 17px
 .main-img-product
-  max-width: 550px
-  max-height: 532px
+  width: 550px
+  height: 532px
+  img
+    width: 100%
 .product-info
   width: 42%
 .sizes,.product-name,.colors
@@ -778,6 +784,9 @@ h2
   height: 70px
   cursor: pointer
   background: url('../img/_src/body/tovar/colors-items-sprite.png') no-repeat
+  img
+    height: 100%
+    width: 100%
 .color-item.brown
   background-position: -126px 0px
 .color-item.black
@@ -827,13 +836,17 @@ h2
 .img-product-gallery-item
   margin-right: 8px
   cursor: pointer
+  max-width: 101px
+  max-height: 82px
+  img
+    width: 100%
 .description-container
   padding: 0 15px
   margin-top: 11px
 .description-name
   width: 203px
 .description-info
-  padding: 30px 0
+  padding: 28px 0
   height:  auto
   color: #d5d6d6
   border-top: 1px solid #d5d6d6

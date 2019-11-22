@@ -52,17 +52,29 @@ $(document).ready(function () {
     let currentHeader = $('.catalog-home-nav-item.active span').attr('data-href');
     $('#header').addClass(currentHeader);
     let catalogHitLink = $('.catalog-home-nav-item span');
-    catalogHitLink.hover(function () {
-       $(this).parent().addClass('active').siblings().removeClass('active').find('.hover-catalog').addClass('hidden').prev('img').removeClass('hidden');
-       $(this).find('.hover-catalog').removeClass('hidden').prev('img').addClass('hidden');
-    });
-    catalogHitLink.click(function (e) {
+    catalogHitLink.hover(function (e) {
         let currentUrl = $(this).attr('data-href');
         e.preventDefault();
         currentUrl = currentUrl.replace(/.*(\/)/g,'');
+        $(this).parent().addClass('active').siblings().removeClass('active').find('.hover-catalog').addClass('hidden').prev('img').removeClass('hidden');
+        $(this).find('.hover-catalog').removeClass('hidden').prev('img').addClass('hidden');
         $('#header').attr('class',currentUrl);
         $('#'+currentUrl).removeClass('hidden').siblings('ul').addClass('hidden');
         $('.header-banner.'+currentUrl).removeClass('hidden').siblings('.header-banner').addClass('hidden');
         console.log(currentUrl)
+    });
+   /* Product Toggle */
+    $('.color-list-item').click(function () {
+        let currentColor = $(this).attr('data-color');
+        if($(`.${currentColor}`).hasClass('hidden')){
+            $(`.${currentColor}`).removeClass('hidden').siblings('.main-img-product-container').addClass('hidden');
+        }
+    })
+    $('.img-product-gallery-item').click(function () {
+        $(this).addClass('active').siblings().removeClass('active');
+        let currentIMG = $(this).find('img').attr('src');
+        let mainIMG = $(this).parent().prev('.main-img-product').find('img').attr('src');
+        $(this).parent().prev('.main-img-product').find('img').attr('src',currentIMG);
+        $(this).find('img').attr('src',mainIMG);
     })
 });
