@@ -41,7 +41,7 @@ img,iframe
 h2
   font-weight: bold
   font-size: 35px
-#header,#main,#footer
+#main,#footer
   overflow: hidden
 .hidden
   display: none !important
@@ -127,6 +127,7 @@ h2
   @include list-type-none
   width: 214px
   padding-top: 10px
+  z-index: 1000
   .header-submenu-item
     position: relative
     .header-submenu
@@ -677,6 +678,7 @@ h2
     text-align: center
 .product-catalog-img
   max-height: 384px
+  background: linear-gradient(to bottom, #cdcdcd 20%, #fff 67%)
   img
     width: 100%
 .product-header

@@ -61,6 +61,7 @@ $(document).ready(function () {
         $('#header').attr('class',currentUrl);
         $('#'+currentUrl).removeClass('hidden').siblings('ul').addClass('hidden');
         $('.header-banner.'+currentUrl).removeClass('hidden').siblings('.header-banner').addClass('hidden');
+        $('.catalog-banner .catalog-title.'+currentUrl).removeClass('hidden').siblings('.catalog-title').addClass('hidden');
         console.log(currentUrl)
     });
    /* Product Toggle */
@@ -76,5 +77,5 @@ $(document).ready(function () {
         let mainIMG = $(this).parent().prev('.main-img-product').find('img').attr('src');
         $(this).parent().prev('.main-img-product').find('img').attr('src',currentIMG);
         $(this).find('img').attr('src',mainIMG);
-    })
+    });
 });
