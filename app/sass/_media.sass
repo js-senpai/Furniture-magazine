@@ -1,6 +1,11 @@
 @import "vars"
 
 /*==========  Desktop First  ==========*/
+@media only screen and (min-width: 1600px)
+  .advantages
+    background-position: top center
+  .advantages-list
+    margin-top: 40%
 @media only screen and (max-width: 1350px)
   .advantages-titles-container
     right: -220px
@@ -69,6 +74,8 @@
     order: 5
   #header .breadcrumbs
     flex-direction: row
+    margin-top: 20px
+    margin-bottom: 20px
     a
       color: $white
   .main-img-product-container,.product-info
@@ -89,6 +96,7 @@
   .header-nav
     display: none
     background-color: #000000b8
+    margin-left: 0px
   .toggleNav
     display: block
     background: transparent
@@ -139,6 +147,8 @@
     margin-left: 0
     text-align: center
     padding-bottom:  20px
+  .advantages
+    background: transparent
   .advantages-bottom
     background-size: 100% 100%
     margin-top: -293px

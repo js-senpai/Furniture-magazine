@@ -392,7 +392,7 @@ h2
 /* Advantages */
 .advantages
   background: url('../img/_src/body/advantages-home/advantages-top-bg.png') no-repeat
-  background-size: 100%
+  background-size: inherit
   background-position: 1px 24px
   padding-top: 1px
   position: relative
@@ -657,16 +657,18 @@ h2
   position: relative
   margin: 0px 2px 2px 0
   width: 33%
+  background: linear-gradient(to bottom, #cdcdcd 20%, #fff 67%)
   .product-catalog-title
     position: absolute
     bottom: 56px
     left: 31px
     font-size: 15px
-    font-weight: normal
+    font-weight: bold
   .article
     position: absolute
     left: 31px
     bottom: 36px
+    font-weight: bold
 .product-catalog-item.more
   background: url('../img/_src/body/catalog-home/catalog-item-bg.jpg') no-repeat center
   background-size: cover
@@ -677,10 +679,12 @@ h2
     text-decoration: underline
     text-align: center
 .product-catalog-img
-  max-height: 384px
-  background: linear-gradient(to bottom, #cdcdcd 20%, #fff 67%)
+  height: 350px
   img
-    width: 100%
+    width: 80%
+    margin: 0 auto
+    display: block
+    padding-top: 75px
 .product-header
   position: absolute
   top: 16px

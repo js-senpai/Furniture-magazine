@@ -45,7 +45,7 @@ $(document).ready(function () {
     $('.toggleNav').click(function () {
         $(this).toggleClass('active');
         $('.header-nav').slideToggle('slow');
-    })
+    });
     /* Toggle Catalog */
     $('.catalog-home-nav-item:first-of-type').addClass('active');
     $('.catalog-home-nav-item.active .hover-catalog').removeClass('hidden').prev('img').addClass('hidden');
