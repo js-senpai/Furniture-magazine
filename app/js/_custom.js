@@ -43,7 +43,12 @@ $(document).ready(function () {
     });
     /* Toggle Menu */
     $('.toggleNav').click(function () {
-        $(this).toggleClass('active');
+        $(this).toggleClass('active icofont-close');
+        if($(this).hasClass('icofont-close')){
+            $(this).removeClass('icofont-navigation-menu');
+        }else{
+            $(this).addClass('icofont-navigation-menu');
+        }
         $('.header-nav').slideToggle('slow');
     });
     /* Toggle Catalog */

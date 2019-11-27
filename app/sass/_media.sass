@@ -57,7 +57,7 @@
     height: auto
     padding: 20px 0
   #header>.flex-container
-      flex-direction: column
+      flex-wrap: wrap
   .header-buttons,.logo-container,.multi-lang
     justify-content: center
     margin-bottom: 15px
@@ -65,13 +65,18 @@
   .logo-container
     order: 1
   .header-buttons
-    order: 2
-  .multi-lang
-    order: 3
-  .toggleNav
     order: 4
-  .header-nav
+    width: 100%
+  .multi-lang
     order: 5
+    width: 100%
+  .toggleNav
+    order: 2
+    margin-top: -25px
+  .header-nav
+    order: 3
+    width: 100%
+    margin-bottom: 10px
   #header .breadcrumbs
     flex-direction: row
     margin-top: 20px
@@ -98,14 +103,13 @@
     background-color: #000000b8
     margin-left: 0px
   .toggleNav
+    text-align: right
     display: block
     background: transparent
     @include reset-button
     color: $white
     font-size: 30px
     transition: all 2s ease-in-out
-  .toggleNav.active
-    transform: rotate(180deg)
   .header-nav .header-nav-item
     margin-right: 0
     height: auto
@@ -150,7 +154,7 @@
   .advantages
     background: transparent
   .advantages-bottom
-    background-size: 100% 100%
+    background-size: inherit
     margin-top: -293px
   .advantages-list
     width: 100%
